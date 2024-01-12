@@ -62,6 +62,7 @@ export default function BrokerManagementCard() {
                                 InputProps={{
                                     endAdornment: <InputAdornment position='end'>%</InputAdornment>,
                                 }}
+                                sx={{width: '820px'}}
                             />
                         </>
                     }

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {
     Autocomplete,
+    Box,
     TextField,
     Typography,
 } from '@mui/material';
@@ -29,7 +30,7 @@ export default function CustomSelect({ value, setValue }: CustomSelectProps) {
                     if (option.isCreateNew) {
                         return (
                             <li key='createNew' {...props}>
-                                <Typography>Or <Typography sx={{ textDecoration: 'underline' }} display="inline">Add manually</Typography></Typography>
+                                <Box>Or <Typography sx={{ textDecoration: 'underline' }} display="inline">Add manually</Typography></Box>
                             </li>
                         )
                     }
